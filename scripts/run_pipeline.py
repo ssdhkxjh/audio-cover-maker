@@ -88,8 +88,13 @@ def main() -> None:
         "--source", str(guide_vocal),
         "--target", str(reference_vocal),
         "--output", str(converted_dir),
+        "--diffusion-steps", "30",
+        "--length-adjust", "1.0",
+        "--inference-cfg-rate", "0.7",
         "--f0-condition", "true",
-        "--auto-f0-adjust", "true",
+        "--auto-f0-adjust", "false",
+        "--semi-tone-shift", "0",
+        "--fp16", "false",
     ], cwd=seed_vc)
     converted = max(converted_dir.glob("*.wav"), key=lambda path: path.stat().st_mtime)
     final = output / "final-cover.wav"

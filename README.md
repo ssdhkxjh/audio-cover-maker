@@ -38,4 +38,4 @@ After reviewing what will be changed, install on an Apple Silicon Mac:
 
 Only use audio and voices you own or have permission to use. Clearly label generated results and do not impersonate a real performer.
 
-音频及声音的使用许可由用户自行取得并承担相关责任，本仓库及其贡献者不对由此产生的法律责任负责。
+Users are solely responsible for obtaining all necessary permissions to use the audio and voices. This repository and its contributors assume no liability for any resulting legal claims or consequences.

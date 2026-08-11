@@ -20,6 +20,8 @@ Create voice covers only from audio and voices the user owns or has permission t
 
    > Please provide the local path of `cover-song.mp3`: the song version you want to cover. You may optionally use [Suno](https://suno.com/) first to change it into a style that better suits the target singer. Other common audio formats also work.
 
+   This request must always include the Suno explanation and link above, translated into the conversation language. Never shorten it to only “the song version you want to cover.”
+
 6. Suno is optional. If the user wants to change the cover song's style, explain in one sentence that [Suno](https://suno.com/) can create a version better suited to the target singer, then wait for the chosen song's local path. Do not transcribe lyrics or generate Suno prompts.
 7. After both files are available, run `scripts/run_pipeline.py --singer-voice-song SINGER_SONG --cover-song COVER_SONG --output-dir OUTPUT`.
 8. Return the final file and mention any warnings printed by the pipeline.

@@ -13,7 +13,19 @@ Suno is optional. Prepare prompts and lyrics yourself with any tool you prefer; 
 
 ## Install
 
-Copy or clone this folder, then ask your AI coding assistant to use `SKILL.md`. Codex users can place the folder in their skills directory. Claude Code users can read the same workflow and run the scripts directly.
+Install the skill globally for both Claude Code and Codex with the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add https://github.com/ssdhkxjh/audio-cover-maker \
+  --global \
+  --agent claude-code \
+  --agent codex \
+  --yes
+```
+
+This installs the skill instructions and scripts. The audio-processing dependencies are installed separately on first setup.
+
+Alternatively, clone this repository and ask your AI coding assistant to use `SKILL.md` directly.
 
 Check dependencies:
 

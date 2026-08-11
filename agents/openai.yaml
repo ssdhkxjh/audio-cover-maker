@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audio Cover Maker"
+  short_description: "Create local AI voice covers on Apple Silicon"
+  default_prompt: "Use $audio-cover-maker to turn my song into an audio cover."
